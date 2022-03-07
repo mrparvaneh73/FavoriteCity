@@ -37,7 +37,7 @@ class FavoriteCitiesFragment : Fragment(R.layout.fragment_favoritecities) {
                         viewmodel.favorite()[position].favorite = false
                         recyclerView.adapter?.notifyItemRemoved(position)
                         recyclerView.adapter?.notifyDataSetChanged()
-                        Log.d(TAG, "onSwiped: " + position)
+
                         adapter.deleteItem(position)
 
 
